@@ -26,7 +26,6 @@ angular.module('app')
                 $location.path('/home')
             })
                 .error(function(data){
-                    console.log(user);
                     console.log(data);
                 })
 

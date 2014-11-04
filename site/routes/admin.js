@@ -11,7 +11,7 @@ var admin = {
 }
 
     router.post('/login',function(req,res){
-        if(req.body.name == 'admin' && req.budy.password == 'admin'){
+        if(req.body.name == admin.name && req.body.password == admin.password){
             res.send({
                 user: admin,
              message: 'Admin is login'

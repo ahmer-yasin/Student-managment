@@ -3,10 +3,10 @@
  */
 var express = require('express');
 var router = express.Router();
-var students = require('admin.js');
+var students = require('./admin');
 var student = students.student;
 var login = false
-router.login('/login',function(req,res){
+router.post('/login',function(req,res){
     if(req.body){
         for(var i = 0;i<student.lenght;i++){
             if(req.body.name == student[i].name && req.body.password == student[i].password){
@@ -31,3 +31,4 @@ router.get('/logout',function(req,body){
 },function(err){
     res.send(err)
 });
+module.exports = router;
