@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname,'client')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/admin',admin);
+app.use('/admin',admin[0]);
 app.use('/student',student);
 
 // catch 404 and forward to error handler

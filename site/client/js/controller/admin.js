@@ -7,7 +7,7 @@ app.controller('adminCtrl',function($scope,$http){
            $http.post('admin/addStudent',user)
                .success(function(data){
                    $scope.data = data;
-                   console.log(data);
+
                })
                .error(function(err){
                    console.log(err);

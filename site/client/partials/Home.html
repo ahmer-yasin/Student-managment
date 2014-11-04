@@ -1,1 +1,145 @@
-<h3>Wellcome {{wellcome}}</h3>
+<div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">Add Students</div>
+            <div style="float:right; font-size: 85%; position: relative; top:-10px"></div>
+        </div>
+        <div class="panel-body" >
+            <form id="signupform" class="form-horizontal" role="form">
+
+                <div id="signupalert" style="display:none" class="alert alert-danger">
+                    <p>Error:</p>
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="firstname"ng-model="user.name" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="lastname" ng-model="user.lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-md-3 control-label">Password</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" name="passwd" ng-model="user.password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form.group">
+                    <lable for="class" class="col-md-3 control-label">Class</lable>
+                    <select ng-model="user.class">
+                        <option ng-repeat="c in class" ng-value="{{c}}">{{c}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <!-- Button -->
+                    <div class="col-md-offset-3 col-md-9">
+                        <button id="btn-signup" ng-click="addStudent(user)" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Add Students</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <table data-toggle="table" data-url="data1.json" data-cache="false" data-height="299">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th> task</th>
+            <th> Password</th>
+            <th>subject</th>
+            <th>class</th>
+        </tr>
+        <tr ng-repeat="student in persons">
+            <td>{{student.name}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.Task}}:</td>
+            <td>{{student.password}}</td>
+            <td>{{student.subject}}</td>
+            <td>{{student.class}}</td>
+            <td>{{student.rating}}</td>
+            <td> <button type="button"class="btn btn-info" ng-click="show(student)">add Task</button>
+               <a class="btn btn-primary btn-lg"  data-toggle="modal" ng-click="popup($index);" data-target="#myModal">edit</a></td>
+        </tr>
+        <tr>
+            <td><input type="text" ng-show="taskShow" ng-model="task"/>
+            <button type="button" ng-show="taskShow" ng-click="addTask(task)">Done</button></td>
+        </tr>
+    </table>
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Edit Student</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th><h3>First Name</h3></th>
+                        <th><h3>Last Name</h3></th>
+                        <th><h3>Rating</h3></th>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <th><input ng-model="edited.name" type="text"/></th>
+                        <th><input ng-model="edited.lastName" type="text"/></th>
+                        <th>
+                            <select class="pull-right selectSize" ng-model="edited.rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><h3>Class</h3></th>
+                        <th><h3>Email</h3></th>
+                        <th><h3>Password</h3></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <select class="pull-right selectSize pull-left" ng-model="edited.class">
+                                <option ng-value="" ng-repeat="c in class">{{c}}</option>
+                            </select></th>
+                        <th><input ng-model="edited.password" type="text"/></th>
+                    </tr>
+                    <tr>
+                        <th><h3>SUBJECT</h3></th>
+                        <th><h3>TASK</h3></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <ol>
+                                <li ng-repeat="subj in edited.subject track by $index">{{subj}}<input  ng-model="user.subjects[$index]" type="text"/></li>
+                            </ol>
+                        </th>
+                        <th>
+                            <textarea ng-model="user.Task" name="" id="" cols="20" rows="7">{{edited.Task}}</textarea>
+                        </th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button ng-click="" type="button" class="btn btn-info pull-left" data-dismiss="modal">delete Student</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button  ng-click="edit(edited)" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--model-->
+

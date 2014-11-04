@@ -7,13 +7,12 @@ angular.module('app')
     app.controller('loginCtrl',function($scope,$http,$location){
     $scope.todo = [];
     $scope.login = function(user){
-    $http.post('users/login',user).success(function(data){
+    $http.post('student/login',user).success(function(data){
            $scope.todo = data;
             console.log(data);
-            $location.path('/todo')
+            $location.path('/studentHome');
         })
         .error(function(data){
-            console.log(user);
             console.log(data);
         })
 

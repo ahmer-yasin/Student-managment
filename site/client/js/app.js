@@ -12,5 +12,13 @@ var app = angular.module('app',['ngRoute'])
                 templateUrl:'./partials/Home.html',
                 controller:'homeCtrl'
             })
+            .when('/studentHome',{
+                templateUrl:'./partials/studentHome.html',
+                controller:'studentCtrl'
+            })
+            .when('studenTask',{
+                templateUrl:'./partials/studentTask.html',
+                controller:'studentCtrl'
+            })
             .otherwise({ redirectTo:'/login' });
     })
