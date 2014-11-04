@@ -1,0 +1,672 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'C:\\Users\\Ahmer\\Desktop\\server-mobile\\site',
+6 verbose install   [ 'express',
+6 verbose install     'body-parser',
+6 verbose install     'cookie-parser',
+6 verbose install     'morgan',
+6 verbose install     'serve-favicon',
+6 verbose install     'debug',
+6 verbose install     'jade' ] ]
+7 info preinstall site@0.0.0
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'express@~4.9.0', null ]
+10 verbose cache add name=undefined spec="express@~4.9.0" args=["express@~4.9.0",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'express@~4.9.0',
+11 verbose parsed url   path: 'express@~4.9.0',
+11 verbose parsed url   href: 'express@~4.9.0' }
+12 verbose cache add [ 'body-parser@~1.8.1', null ]
+13 verbose cache add name=undefined spec="body-parser@~1.8.1" args=["body-parser@~1.8.1",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'body-parser@~1.8.1',
+14 verbose parsed url   path: 'body-parser@~1.8.1',
+14 verbose parsed url   href: 'body-parser@~1.8.1' }
+15 verbose cache add [ 'cookie-parser@~1.3.3', null ]
+16 verbose cache add name=undefined spec="cookie-parser@~1.3.3" args=["cookie-parser@~1.3.3",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'cookie-parser@~1.3.3',
+17 verbose parsed url   path: 'cookie-parser@~1.3.3',
+17 verbose parsed url   href: 'cookie-parser@~1.3.3' }
+18 verbose cache add [ 'morgan@~1.3.0', null ]
+19 verbose cache add name=undefined spec="morgan@~1.3.0" args=["morgan@~1.3.0",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'morgan@~1.3.0',
+20 verbose parsed url   path: 'morgan@~1.3.0',
+20 verbose parsed url   href: 'morgan@~1.3.0' }
+21 verbose cache add [ 'serve-favicon@~2.1.3', null ]
+22 verbose cache add name=undefined spec="serve-favicon@~2.1.3" args=["serve-favicon@~2.1.3",null]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: 'serve-favicon@~2.1.3',
+23 verbose parsed url   path: 'serve-favicon@~2.1.3',
+23 verbose parsed url   href: 'serve-favicon@~2.1.3' }
+24 verbose cache add [ 'debug@~2.0.0', null ]
+25 verbose cache add name=undefined spec="debug@~2.0.0" args=["debug@~2.0.0",null]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: 'debug@~2.0.0',
+26 verbose parsed url   path: 'debug@~2.0.0',
+26 verbose parsed url   href: 'debug@~2.0.0' }
+27 verbose cache add [ 'jade@~1.6.0', null ]
+28 verbose cache add name=undefined spec="jade@~1.6.0" args=["jade@~1.6.0",null]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: 'jade@~1.6.0',
+29 verbose parsed url   path: 'jade@~1.6.0',
+29 verbose parsed url   href: 'jade@~1.6.0' }
+30 verbose cache add name="express" spec="~4.9.0" args=["express","~4.9.0"]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: '~4.9.0',
+31 verbose parsed url   path: '~4.9.0',
+31 verbose parsed url   href: '~4.9.0' }
+32 verbose addNamed [ 'express', '~4.9.0' ]
+33 verbose addNamed [ null, '>=4.9.0-0 <4.10.0-0' ]
+34 verbose cache add name="body-parser" spec="~1.8.1" args=["body-parser","~1.8.1"]
+35 verbose parsed url { protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: '~1.8.1',
+35 verbose parsed url   path: '~1.8.1',
+35 verbose parsed url   href: '~1.8.1' }
+36 verbose addNamed [ 'body-parser', '~1.8.1' ]
+37 verbose addNamed [ null, '>=1.8.1-0 <1.9.0-0' ]
+38 verbose cache add name="cookie-parser" spec="~1.3.3" args=["cookie-parser","~1.3.3"]
+39 verbose parsed url { protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: '~1.3.3',
+39 verbose parsed url   path: '~1.3.3',
+39 verbose parsed url   href: '~1.3.3' }
+40 verbose addNamed [ 'cookie-parser', '~1.3.3' ]
+41 verbose addNamed [ null, '>=1.3.3-0 <1.4.0-0' ]
+42 verbose cache add name="morgan" spec="~1.3.0" args=["morgan","~1.3.0"]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: '~1.3.0',
+43 verbose parsed url   path: '~1.3.0',
+43 verbose parsed url   href: '~1.3.0' }
+44 verbose addNamed [ 'morgan', '~1.3.0' ]
+45 verbose addNamed [ null, '>=1.3.0-0 <1.4.0-0' ]
+46 verbose cache add name="serve-favicon" spec="~2.1.3" args=["serve-favicon","~2.1.3"]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '~2.1.3',
+47 verbose parsed url   path: '~2.1.3',
+47 verbose parsed url   href: '~2.1.3' }
+48 verbose addNamed [ 'serve-favicon', '~2.1.3' ]
+49 verbose addNamed [ null, '>=2.1.3-0 <2.2.0-0' ]
+50 verbose cache add name="debug" spec="~2.0.0" args=["debug","~2.0.0"]
+51 verbose parsed url { protocol: null,
+51 verbose parsed url   slashes: null,
+51 verbose parsed url   auth: null,
+51 verbose parsed url   host: null,
+51 verbose parsed url   port: null,
+51 verbose parsed url   hostname: null,
+51 verbose parsed url   hash: null,
+51 verbose parsed url   search: null,
+51 verbose parsed url   query: null,
+51 verbose parsed url   pathname: '~2.0.0',
+51 verbose parsed url   path: '~2.0.0',
+51 verbose parsed url   href: '~2.0.0' }
+52 verbose addNamed [ 'debug', '~2.0.0' ]
+53 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+54 verbose cache add name="jade" spec="~1.6.0" args=["jade","~1.6.0"]
+55 verbose parsed url { protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: '~1.6.0',
+55 verbose parsed url   path: '~1.6.0',
+55 verbose parsed url   href: '~1.6.0' }
+56 verbose addNamed [ 'jade', '~1.6.0' ]
+57 verbose addNamed [ null, '>=1.6.0-0 <1.7.0-0' ]
+58 silly lockFile 6ae7fa08-express-4-9-0 express@~4.9.0
+59 verbose lock express@~4.9.0 C:\Users\Ahmer\AppData\Roaming\npm-cache\6ae7fa08-express-4-9-0.lock
+60 silly lockFile a49948c1-body-parser-1-8-1 body-parser@~1.8.1
+61 verbose lock body-parser@~1.8.1 C:\Users\Ahmer\AppData\Roaming\npm-cache\a49948c1-body-parser-1-8-1.lock
+62 silly lockFile bf5babd8-cookie-parser-1-3-3 cookie-parser@~1.3.3
+63 verbose lock cookie-parser@~1.3.3 C:\Users\Ahmer\AppData\Roaming\npm-cache\bf5babd8-cookie-parser-1-3-3.lock
+64 silly lockFile a4a9bdf4-morgan-1-3-0 morgan@~1.3.0
+65 verbose lock morgan@~1.3.0 C:\Users\Ahmer\AppData\Roaming\npm-cache\a4a9bdf4-morgan-1-3-0.lock
+66 silly lockFile 38295489-serve-favicon-2-1-3 serve-favicon@~2.1.3
+67 verbose lock serve-favicon@~2.1.3 C:\Users\Ahmer\AppData\Roaming\npm-cache\38295489-serve-favicon-2-1-3.lock
+68 silly lockFile 12b6356d-debug-2-0-0 debug@~2.0.0
+69 verbose lock debug@~2.0.0 C:\Users\Ahmer\AppData\Roaming\npm-cache\12b6356d-debug-2-0-0.lock
+70 silly lockFile ad8c17a8-jade-1-6-0 jade@~1.6.0
+71 verbose lock jade@~1.6.0 C:\Users\Ahmer\AppData\Roaming\npm-cache\ad8c17a8-jade-1-6-0.lock
+72 silly addNameRange { name: 'express', range: '>=4.9.0-0 <4.10.0-0', hasData: false }
+73 silly addNameRange { name: 'body-parser',
+73 silly addNameRange   range: '>=1.8.1-0 <1.9.0-0',
+73 silly addNameRange   hasData: false }
+74 silly addNameRange { name: 'cookie-parser',
+74 silly addNameRange   range: '>=1.3.3-0 <1.4.0-0',
+74 silly addNameRange   hasData: false }
+75 silly addNameRange { name: 'morgan', range: '>=1.3.0-0 <1.4.0-0', hasData: false }
+76 silly addNameRange { name: 'serve-favicon',
+76 silly addNameRange   range: '>=2.1.3-0 <2.2.0-0',
+76 silly addNameRange   hasData: false }
+77 silly addNameRange { name: 'debug', range: '>=2.0.0-0 <2.1.0-0', hasData: false }
+78 silly addNameRange { name: 'jade', range: '>=1.6.0-0 <1.7.0-0', hasData: false }
+79 verbose request where is /body-parser
+80 verbose request registry https://registry.npmjs.org/
+81 verbose request id d3db0b407cd8214a
+82 verbose url raw /body-parser
+83 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+84 verbose url resolved https://registry.npmjs.org/body-parser
+85 verbose request where is https://registry.npmjs.org/body-parser
+86 info trying registry request attempt 1 at 07:40:47
+87 http GET https://registry.npmjs.org/body-parser
+88 verbose request where is /cookie-parser
+89 verbose request registry https://registry.npmjs.org/
+90 verbose url raw /cookie-parser
+91 verbose url resolving [ 'https://registry.npmjs.org/', './cookie-parser' ]
+92 verbose url resolved https://registry.npmjs.org/cookie-parser
+93 verbose request where is https://registry.npmjs.org/cookie-parser
+94 info trying registry request attempt 1 at 07:40:47
+95 http GET https://registry.npmjs.org/cookie-parser
+96 verbose request where is /morgan
+97 verbose request registry https://registry.npmjs.org/
+98 verbose url raw /morgan
+99 verbose url resolving [ 'https://registry.npmjs.org/', './morgan' ]
+100 verbose url resolved https://registry.npmjs.org/morgan
+101 verbose request where is https://registry.npmjs.org/morgan
+102 info trying registry request attempt 1 at 07:40:47
+103 http GET https://registry.npmjs.org/morgan
+104 verbose request where is /serve-favicon
+105 verbose request registry https://registry.npmjs.org/
+106 verbose url raw /serve-favicon
+107 verbose url resolving [ 'https://registry.npmjs.org/', './serve-favicon' ]
+108 verbose url resolved https://registry.npmjs.org/serve-favicon
+109 verbose request where is https://registry.npmjs.org/serve-favicon
+110 info trying registry request attempt 1 at 07:40:47
+111 http GET https://registry.npmjs.org/serve-favicon
+112 verbose request where is /jade
+113 verbose request registry https://registry.npmjs.org/
+114 verbose url raw /jade
+115 verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+116 verbose url resolved https://registry.npmjs.org/jade
+117 verbose request where is https://registry.npmjs.org/jade
+118 info trying registry request attempt 1 at 07:40:47
+119 http GET https://registry.npmjs.org/jade
+120 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+121 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+122 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+123 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+124 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+125 verbose request where is /debug
+126 verbose request registry https://registry.npmjs.org/
+127 verbose url raw /debug
+128 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+129 verbose url resolved https://registry.npmjs.org/debug
+130 verbose request where is https://registry.npmjs.org/debug
+131 info trying registry request attempt 1 at 07:40:47
+132 verbose etag "BWMD72JWBAIND5V8QRU6MMLCL"
+133 http GET https://registry.npmjs.org/debug
+134 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+135 verbose request where is /express
+136 verbose request registry https://registry.npmjs.org/
+137 verbose url raw /express
+138 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+139 verbose url resolved https://registry.npmjs.org/express
+140 verbose request where is https://registry.npmjs.org/express
+141 info trying registry request attempt 1 at 07:40:47
+142 verbose etag "3QG0NHFSIF9S5XKZ5R0RD9DOS"
+143 http GET https://registry.npmjs.org/express
+144 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+145 info trying registry request attempt 2 at 07:40:57
+146 http GET https://registry.npmjs.org/body-parser
+147 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+148 info trying registry request attempt 2 at 07:40:57
+149 http GET https://registry.npmjs.org/cookie-parser
+150 info trying registry request attempt 2 at 07:40:57
+151 http GET https://registry.npmjs.org/morgan
+152 info trying registry request attempt 2 at 07:40:57
+153 http GET https://registry.npmjs.org/serve-favicon
+154 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+155 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+156 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+157 info trying registry request attempt 2 at 07:40:57
+158 http GET https://registry.npmjs.org/jade
+159 info trying registry request attempt 2 at 07:40:57
+160 verbose etag "BWMD72JWBAIND5V8QRU6MMLCL"
+161 http GET https://registry.npmjs.org/debug
+162 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+163 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+164 info trying registry request attempt 2 at 07:40:57
+165 verbose etag "3QG0NHFSIF9S5XKZ5R0RD9DOS"
+166 http GET https://registry.npmjs.org/express
+167 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+168 info trying registry request attempt 3 at 07:41:57
+169 http GET https://registry.npmjs.org/body-parser
+170 silly lockFile a49948c1-body-parser-1-8-1 body-parser@~1.8.1
+171 silly lockFile a49948c1-body-parser-1-8-1 body-parser@~1.8.1
+172 info trying registry request attempt 3 at 07:41:57
+173 http GET https://registry.npmjs.org/cookie-parser
+174 info trying registry request attempt 3 at 07:41:57
+175 http GET https://registry.npmjs.org/morgan
+176 info trying registry request attempt 3 at 07:41:57
+177 http GET https://registry.npmjs.org/serve-favicon
+178 silly lockFile bf5babd8-cookie-parser-1-3-3 cookie-parser@~1.3.3
+179 silly lockFile bf5babd8-cookie-parser-1-3-3 cookie-parser@~1.3.3
+180 silly lockFile a4a9bdf4-morgan-1-3-0 morgan@~1.3.0
+181 silly lockFile a4a9bdf4-morgan-1-3-0 morgan@~1.3.0
+182 silly lockFile 38295489-serve-favicon-2-1-3 serve-favicon@~2.1.3
+183 silly lockFile 38295489-serve-favicon-2-1-3 serve-favicon@~2.1.3
+184 info trying registry request attempt 3 at 07:41:57
+185 http GET https://registry.npmjs.org/jade
+186 info trying registry request attempt 3 at 07:41:57
+187 verbose etag "BWMD72JWBAIND5V8QRU6MMLCL"
+188 http GET https://registry.npmjs.org/debug
+189 silly lockFile ad8c17a8-jade-1-6-0 jade@~1.6.0
+190 silly lockFile ad8c17a8-jade-1-6-0 jade@~1.6.0
+191 silly registry.get cb [ 304, undefined ]
+192 verbose etag https://registry.npmjs.org/debug from cache
+193 silly addNameRange number 2 { name: 'debug', range: '>=2.0.0-0 <2.1.0-0', hasData: true }
+194 silly addNameRange versions [ 'debug',
+194 silly addNameRange   [ '0.0.1',
+194 silly addNameRange     '0.1.0',
+194 silly addNameRange     '0.2.0',
+194 silly addNameRange     '0.3.0',
+194 silly addNameRange     '0.4.0',
+194 silly addNameRange     '0.4.1',
+194 silly addNameRange     '0.5.0',
+194 silly addNameRange     '0.6.0',
+194 silly addNameRange     '0.7.0',
+194 silly addNameRange     '0.7.1',
+194 silly addNameRange     '0.7.2',
+194 silly addNameRange     '0.7.3',
+194 silly addNameRange     '0.7.4',
+194 silly addNameRange     '0.8.0',
+194 silly addNameRange     '0.8.1',
+194 silly addNameRange     '1.0.0',
+194 silly addNameRange     '1.0.1',
+194 silly addNameRange     '1.0.2',
+194 silly addNameRange     '1.0.3',
+194 silly addNameRange     '1.0.4',
+194 silly addNameRange     '2.0.0',
+194 silly addNameRange     '2.1.0' ] ]
+195 verbose addNamed [ 'debug', '2.0.0' ]
+196 verbose addNamed [ '2.0.0', '2.0.0' ]
+197 silly lockFile 095bd820-debug-2-0-0 debug@2.0.0
+198 verbose lock debug@2.0.0 C:\Users\Ahmer\AppData\Roaming\npm-cache\095bd820-debug-2-0-0.lock
+199 info trying registry request attempt 3 at 07:41:57
+200 verbose etag "3QG0NHFSIF9S5XKZ5R0RD9DOS"
+201 http GET https://registry.npmjs.org/express
+202 silly registry.get cb [ 304, undefined ]
+203 verbose etag https://registry.npmjs.org/express from cache
+204 silly lockFile e2182b07--npmjs-org-debug-debug-2-0-0-tgz https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+205 verbose lock https://registry.npmjs.org/debug/-/debug-2.0.0.tgz C:\Users\Ahmer\AppData\Roaming\npm-cache\e2182b07--npmjs-org-debug-debug-2-0-0-tgz.lock
+206 verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-2.0.0.tgz',
+206 verbose addRemoteTarball   '89bd9df6732b51256bc6705342bba02ed12131ef' ]
+207 info retry fetch attempt 1 at 07:41:57
+208 verbose fetch to= C:\Users\Ahmer\AppData\Local\Temp\npm-1692-ZbSSvj0M\registry.npmjs.org\debug\-\debug-2.0.0.tgz
+209 http GET https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+210 error fetch failed https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+211 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+212 silly addNameRange number 2 { name: 'express', range: '>=4.9.0-0 <4.10.0-0', hasData: true }
+213 silly addNameRange versions [ 'express',
+213 silly addNameRange   [ '0.14.0',
+213 silly addNameRange     '0.14.1',
+213 silly addNameRange     '1.0.0',
+213 silly addNameRange     '1.0.1',
+213 silly addNameRange     '1.0.2',
+213 silly addNameRange     '1.0.3',
+213 silly addNameRange     '1.0.4',
+213 silly addNameRange     '1.0.5',
+213 silly addNameRange     '1.0.6',
+213 silly addNameRange     '1.0.7',
+213 silly addNameRange     '1.0.8',
+213 silly addNameRange     '2.0.0',
+213 silly addNameRange     '2.1.0',
+213 silly addNameRange     '2.1.1',
+213 silly addNameRange     '2.2.0',
+213 silly addNameRange     '2.2.1',
+213 silly addNameRange     '2.2.2',
+213 silly addNameRange     '2.3.0',
+213 silly addNameRange     '2.3.1',
+213 silly addNameRange     '2.3.2',
+213 silly addNameRange     '2.3.3',
+213 silly addNameRange     '2.3.4',
+213 silly addNameRange     '2.3.5',
+213 silly addNameRange     '2.3.6',
+213 silly addNameRange     '2.3.7',
+213 silly addNameRange     '2.3.8',
+213 silly addNameRange     '2.3.9',
+213 silly addNameRange     '2.3.10',
+213 silly addNameRange     '2.3.11',
+213 silly addNameRange     '2.3.12',
+213 silly addNameRange     '2.4.0',
+213 silly addNameRange     '2.4.1',
+213 silly addNameRange     '2.4.2',
+213 silly addNameRange     '2.4.3',
+213 silly addNameRange     '2.4.4',
+213 silly addNameRange     '2.4.5',
+213 silly addNameRange     '2.4.6',
+213 silly addNameRange     '2.4.7',
+213 silly addNameRange     '2.5.0',
+213 silly addNameRange     '2.5.1',
+213 silly addNameRange     '2.5.2',
+213 silly addNameRange     '2.5.3',
+213 silly addNameRange     '2.5.4',
+213 silly addNameRange     '2.5.5',
+213 silly addNameRange     '2.5.6',
+213 silly addNameRange     '2.5.7',
+213 silly addNameRange     '2.5.8',
+213 silly addNameRange     '2.5.9',
+213 silly addNameRange     '2.5.10',
+213 silly addNameRange     '2.5.11',
+213 silly addNameRange     '3.0.0',
+213 silly addNameRange     '3.0.1',
+213 silly addNameRange     '3.0.2',
+213 silly addNameRange     '3.0.3',
+213 silly addNameRange     '3.0.4',
+213 silly addNameRange     '3.0.5',
+213 silly addNameRange     '3.0.6',
+213 silly addNameRange     '3.1.0',
+213 silly addNameRange     '3.1.1',
+213 silly addNameRange     '3.1.2',
+213 silly addNameRange     '3.2.0',
+213 silly addNameRange     '3.2.1',
+213 silly addNameRange     '3.2.2',
+213 silly addNameRange     '3.2.3',
+213 silly addNameRange     '3.2.4',
+213 silly addNameRange     '3.2.5',
+213 silly addNameRange     '3.2.6',
+213 silly addNameRange     '3.3.0',
+213 silly addNameRange     '3.3.1',
+213 silly addNameRange     '3.3.2',
+213 silly addNameRange     '3.3.3',
+213 silly addNameRange     '3.3.4',
+213 silly addNameRange     '3.3.5',
+213 silly addNameRange     '3.3.6',
+213 silly addNameRange     '1.0.0-beta',
+213 silly addNameRange     '1.0.0-beta2',
+213 silly addNameRange     '1.0.0-rc',
+213 silly addNameRange     '1.0.0-rc2',
+213 silly addNameRange     '1.0.0-rc3',
+213 silly addNameRange     '1.0.0-rc4',
+213 silly addNameRange     '2.0.0-beta',
+213 silly addNameRange     '2.0.0-beta2',
+213 silly addNameRange     '2.0.0-beta3',
+213 silly addNameRange     '2.0.0-rc',
+213 silly addNameRange     '2.0.0-rc2',
+213 silly addNameRange     '2.0.0-rc3',
+213 silly addNameRange     '3.0.0-alpha1',
+213 silly addNameRange     '3.0.0-alpha2',
+213 silly addNameRange     '3.0.0-alpha3',
+213 silly addNameRange     '3.0.0-alpha4',
+213 silly addNameRange     '3.0.0-alpha5',
+213 silly addNameRange     '3.0.0-beta1',
+213 silly addNameRange     '3.0.0-beta2',
+213 silly addNameRange     '3.0.0-beta3',
+213 silly addNameRange     '3.0.0-beta4',
+213 silly addNameRange     '3.0.0-beta6',
+213 silly addNameRange     '3.0.0-beta7',
+213 silly addNameRange     '3.0.0-rc1',
+213 silly addNameRange     '3.0.0-rc2',
+213 silly addNameRange     '3.0.0-rc3',
+213 silly addNameRange     '3.0.0-rc4',
+213 silly addNameRange     '3.0.0-rc5',
+213 silly addNameRange     '3.3.7',
+213 silly addNameRange     '3.3.8',
+213 silly addNameRange     '3.4.0',
+213 silly addNameRange     '3.4.1',
+213 silly addNameRange     '3.4.2',
+213 silly addNameRange     '3.4.3',
+213 silly addNameRange     '3.4.4',
+213 silly addNameRange     '3.4.5',
+213 silly addNameRange     '3.4.6',
+213 silly addNameRange     '3.4.7',
+213 silly addNameRange     '3.4.8',
+213 silly addNameRange     '4.0.0-rc1',
+213 silly addNameRange     '4.0.0-rc2',
+213 silly addNameRange     '3.5.0',
+213 silly addNameRange     '4.0.0-rc3',
+213 silly addNameRange     '4.0.0-rc4',
+213 silly addNameRange     '3.5.1',
+213 silly addNameRange     '4.0.0',
+213 silly addNameRange     '3.5.2',
+213 silly addNameRange     '4.1.0',
+213 silly addNameRange     '4.1.1',
+213 silly addNameRange     '3.5.3',
+213 silly addNameRange     '4.1.2',
+213 silly addNameRange     '3.6.0',
+213 silly addNameRange     '4.2.0',
+213 silly addNameRange     '3.7.0',
+213 silly addNameRange     '3.8.0',
+213 silly addNameRange     '4.3.0',
+213 silly addNameRange     '4.3.1',
+213 silly addNameRange     '3.8.1',
+213 silly addNameRange     '4.3.2',
+213 silly addNameRange     '3.9.0',
+213 silly addNameRange     '4.4.0',
+213 silly addNameRange     '4.4.1',
+213 silly addNameRange     '3.10.0',
+213 silly addNameRange     '3.10.1',
+213 silly addNameRange     '3.10.2',
+213 silly addNameRange     '3.10.3',
+213 silly addNameRange     '3.10.4',
+213 silly addNameRange     '4.4.2',
+213 silly addNameRange     '3.10.5',
+213 silly addNameRange     '4.4.3',
+213 silly addNameRange     '3.11.0',
+213 silly addNameRange     '4.4.4',
+213 silly addNameRange     '3.12.0',
+213 silly addNameRange     '3.12.1',
+213 silly addNameRange     '4.4.5',
+213 silly addNameRange     '3.13.0',
+213 silly addNameRange     '4.5.0',
+213 silly addNameRange     '4.5.1',
+213 silly addNameRange     '3.14.0',
+213 silly addNameRange     '4.6.0',
+213 silly addNameRange     '4.6.1',
+213 silly addNameRange     '3.15.0',
+213 silly addNameRange     '4.7.0',
+213 silly addNameRange     '3.15.1',
+213 silly addNameRange     '4.7.1',
+213 silly addNameRange     '3.15.2',
+213 silly addNameRange     '4.7.2',
+213 silly addNameRange     '4.7.3',
+213 silly addNameRange     '3.15.3',
+213 silly addNameRange     '4.7.4',
+213 silly addNameRange     '3.16.0',
+213 silly addNameRange     '4.8.0',
+213 silly addNameRange     '3.16.1',
+213 silly addNameRange     '4.8.1',
+213 silly addNameRange     '3.16.2',
+213 silly addNameRange     '4.8.2',
+213 silly addNameRange     '3.16.3',
+213 silly addNameRange     '3.16.4',
+213 silly addNameRange     '4.8.3',
+213 silly addNameRange     '3.16.5',
+213 silly addNameRange     '3.16.6',
+213 silly addNameRange     '4.8.4',
+213 silly addNameRange     '3.16.7',
+213 silly addNameRange     '4.8.5',
+213 silly addNameRange     '3.16.8',
+213 silly addNameRange     '4.8.6',
+213 silly addNameRange     '3.16.9',
+213 silly addNameRange     '4.8.7',
+213 silly addNameRange     '3.16.10',
+213 silly addNameRange     '4.8.8',
+213 silly addNameRange     '3.17.0',
+213 silly addNameRange     '3.17.1',
+213 silly addNameRange     '4.9.0',
+213 silly addNameRange     '3.17.2',
+213 silly addNameRange     '4.9.1',
+213 silly addNameRange     '4.9.2',
+213 silly addNameRange     '3.17.3',
+213 silly addNameRange     '4.9.3',
+213 silly addNameRange     '3.17.4',
+213 silly addNameRange     '4.9.4',
+213 silly addNameRange     '3.17.5',
+213 silly addNameRange     '4.9.5',
+213 silly addNameRange     '3.17.6',
+213 silly addNameRange     '3.17.7',
+213 silly addNameRange     '4.9.6',
+213 silly addNameRange     '4.9.7',
+213 silly addNameRange     '3.17.8',
+213 silly addNameRange     '4.9.8',
+213 silly addNameRange     '3.18.0',
+213 silly addNameRange     '3.18.1',
+213 silly addNameRange     '4.10.0',
+213 silly addNameRange     '3.18.2',
+213 silly addNameRange     '4.10.1' ] ]
+214 verbose addNamed [ 'express', '4.9.8' ]
+215 verbose addNamed [ '4.9.8', '4.9.8' ]
+216 silly lockFile 3e3a25f6-express-4-9-8 express@4.9.8
+217 verbose lock express@4.9.8 C:\Users\Ahmer\AppData\Roaming\npm-cache\3e3a25f6-express-4-9-8.lock
+218 silly lockFile 2d7fb097-js-org-express-express-4-9-8-tgz https://registry.npmjs.org/express/-/express-4.9.8.tgz
+219 verbose lock https://registry.npmjs.org/express/-/express-4.9.8.tgz C:\Users\Ahmer\AppData\Roaming\npm-cache\2d7fb097-js-org-express-express-4-9-8-tgz.lock
+220 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.9.8.tgz',
+220 verbose addRemoteTarball   'f360f596baeabbd0e5223b603d6eb578d9d2d10d' ]
+221 info retry fetch attempt 1 at 07:41:57
+222 verbose fetch to= C:\Users\Ahmer\AppData\Local\Temp\npm-1692-ZbSSvj0M\registry.npmjs.org\express\-\express-4.9.8.tgz
+223 http GET https://registry.npmjs.org/express/-/express-4.9.8.tgz
+224 error fetch failed https://registry.npmjs.org/express/-/express-4.9.8.tgz
+225 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+226 info retry fetch attempt 2 at 07:42:07
+227 verbose fetch to= C:\Users\Ahmer\AppData\Local\Temp\npm-1692-ZbSSvj0M\registry.npmjs.org\debug\-\debug-2.0.0.tgz
+228 http GET https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+229 error fetch failed https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+230 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+231 info retry fetch attempt 2 at 07:42:07
+232 verbose fetch to= C:\Users\Ahmer\AppData\Local\Temp\npm-1692-ZbSSvj0M\registry.npmjs.org\express\-\express-4.9.8.tgz
+233 http GET https://registry.npmjs.org/express/-/express-4.9.8.tgz
+234 error fetch failed https://registry.npmjs.org/express/-/express-4.9.8.tgz
+235 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+236 info retry fetch attempt 3 at 07:43:07
+237 verbose fetch to= C:\Users\Ahmer\AppData\Local\Temp\npm-1692-ZbSSvj0M\registry.npmjs.org\debug\-\debug-2.0.0.tgz
+238 http GET https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+239 error fetch failed https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+240 silly lockFile e2182b07--npmjs-org-debug-debug-2-0-0-tgz https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+241 silly lockFile e2182b07--npmjs-org-debug-debug-2-0-0-tgz https://registry.npmjs.org/debug/-/debug-2.0.0.tgz
+242 silly lockFile 095bd820-debug-2-0-0 debug@2.0.0
+243 silly lockFile 095bd820-debug-2-0-0 debug@2.0.0
+244 silly lockFile 12b6356d-debug-2-0-0 debug@~2.0.0
+245 silly lockFile 12b6356d-debug-2-0-0 debug@~2.0.0
+246 info retry fetch attempt 3 at 07:43:07
+247 verbose fetch to= C:\Users\Ahmer\AppData\Local\Temp\npm-1692-ZbSSvj0M\registry.npmjs.org\express\-\express-4.9.8.tgz
+248 http GET https://registry.npmjs.org/express/-/express-4.9.8.tgz
+249 error fetch failed https://registry.npmjs.org/express/-/express-4.9.8.tgz
+250 silly lockFile 2d7fb097-js-org-express-express-4-9-8-tgz https://registry.npmjs.org/express/-/express-4.9.8.tgz
+251 silly lockFile 2d7fb097-js-org-express-express-4-9-8-tgz https://registry.npmjs.org/express/-/express-4.9.8.tgz
+252 silly lockFile 3e3a25f6-express-4-9-8 express@4.9.8
+253 silly lockFile 3e3a25f6-express-4-9-8 express@4.9.8
+254 silly lockFile 6ae7fa08-express-4-9-0 express@~4.9.0
+255 silly lockFile 6ae7fa08-express-4-9-0 express@~4.9.0
+256 error network getaddrinfo ENOTFOUND
+256 error network This is most likely not a problem with npm itself
+256 error network and is related to network connectivity.
+256 error network In most cases you are behind a proxy or have bad network settings.
+256 error network
+256 error network If you are behind a proxy, please make sure that the
+256 error network 'proxy' config is set properly.  See: 'npm help config'
+257 error System Windows_NT 6.2.9200
+258 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+259 error cwd C:\Users\Ahmer\Desktop\server-mobile\site
+260 error node -v v0.10.33
+261 error npm -v 1.4.28
+262 error syscall getaddrinfo
+263 error code ENOTFOUND
+264 error errno ENOTFOUND
+265 verbose exit [ 1, true ]

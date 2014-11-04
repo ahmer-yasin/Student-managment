@@ -1,0 +1,15 @@
+<div ng-controller="todoCtrl">
+<form role ="form" id="main_input_box">
+    <label>
+        <input type="text" class ="form-control" ng-model="user.item" id="custom_textbox" name="Item" placeholder="What do you need to do?">
+        <input type="submit" ng-click="addItem(user)" value="Add" class="btn btn-primary add_button">
+    </label>
+</form>
+<form>
+    <ol class="list-group list_of_items" ng-repeat="item in todo">
+       <li class="list-group-item">{{item}}<button class="btn-danger" ng-click="deleteItem(item)"> Delete</button> </li>
+    </ol>
+</form>
+    <a id="btn-login" class="btn btn-success" ng-click="logout()">logout  </a>
+
+</div>
