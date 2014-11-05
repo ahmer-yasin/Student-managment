@@ -29,7 +29,7 @@ app.controller('homeCtrl',function($scope,$http){
             $http.post('admin/addTask',students)
                 .success(function(data){
                     console.log(data);
-                    $scope.taskShow = false;
+                     $scope.taskShow = false;
                 })
                 .error(function(err){
                     console.log(err)

@@ -55,14 +55,13 @@ var subjects = ['math','physics','chemistry','Computer','electronics'];
       if(req.body.name){
           for(var i = 0;i<admin.student.length;i++){
               if(req.body.name == admin.student[i].name){
-                  admin.student[i].task = req.body.task;
+                  admin.student[i].Task.push({task:req.body.Task,comments:[]});
                   res.send(admin);
-                  return;
               }
           }
-
      }
-    },function(err){
+    },
+        function(err){
     res.send(err);
     });
     router.post('/editStudent',function(req,res){

@@ -23,12 +23,25 @@ router.post('/login',function(req,res){
 },function(err){
     res.send(err)
 })
-router.get('/logout',function(req,res){
+router.post('/comments',function(req,res){
+    if(req.body.comment){
+        for(var s = 0;s < student.length;s++){
+            if(req.body.user.name ==  student[s].name){
+                student[s].Task[req.body.index].comments.push(req.body.comment);
+                res.send(student[s]);
+            }
+        }
+    }
+},function(err){
+res.send(err)
+})
+
+ router.get('/logout',function(req,res){
     if(req){
        login= false;
        res.send('logout');
     }
-},function(err){
+ },function(err){
     res.send(err)
 });
 module.exports = router;

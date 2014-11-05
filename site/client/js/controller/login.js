@@ -4,11 +4,11 @@
 /*
 angular.module('app')
 */
-    app.controller('loginCtrl',function($scope,$http,$location){
+    app.controller('loginCtrl',function($scope,$http,$location,$rootScope){
     $scope.todo = [];
     $scope.login = function(user){
     $http.post('student/login',user).success(function(data){
-           $scope.todo = data;
+           $rootScope.student = data.user;
             console.log(data);
             $location.path('/studentHome');
         })
